@@ -127,13 +127,18 @@ body {
     width: 100%;
     height: 100%;
   }
-  
-  .card__form__container {
-    position: relative;
+
+  .card-thanks__wrapper {
+    margin-left: 8em;
+  }
+
+  .card-thanks__wrapper > button {
+    width: 130%;
   }
   
   .invalid-form {
     position: fixed;
-    bottom: 20%;
+    bottom: 25%;
+    margin-left: 8em;
   }
 }

@@ -64,7 +64,7 @@ const CardForm = ({ setFormData, formData, handleSubmit }) => {
                 type="text"
                 placeholder="MM"
                 name="mm"
-                className={formData.yy.length === 1 ? 'input__error' : 'card__input'}
+                className={formData.mm.length === 1 ? 'input__error' : 'card__input'}
                 onChange={handleInputChange}
                 maxLength={2}
               />

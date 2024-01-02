@@ -19,7 +19,6 @@ form {
   gap: 1em;
   text-transform: uppercase;
   font-size: 0.75rem;
-  text-align: left;
   color: var(--Dark-violet);
 }
 
@@ -90,7 +89,7 @@ input:focus {
 }
 
 .info:nth-child(5) {
-  margin-top: 8px;
+  margin-top: 0.8em;
 }
 
 .cvc {
@@ -107,9 +106,10 @@ input:focus {
   }
 
   .card__form__container {
+    position: relative;
     margin: 0;
     max-width: 50%;
-    margin-left: 6em;
+    margin-left: 8em;
   }
 
   .label__cvc {
@@ -121,12 +121,20 @@ input:focus {
 @media only screen and (min-width: 1280px) {
   .card__form__container {
     margin: 0;
-    max-width: 40%;
-    scale: 1.15;
-    margin-left: 6em;
+    max-width: 45%;
+    margin-left: 8em;
   }
 
   .card__cvc-mmyy {
     margin-bottom: 0.2em;
+  }
+
+  .card__form__container label,
+  .card__form__container input {
+    font-size: 0.9rem;
+  }
+
+  .card__input, .input__error {
+    padding: 1.1em;
   }
 }
