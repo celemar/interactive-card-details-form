@@ -37,6 +37,7 @@ button {
   width: 100%;
   font-weight: 500;
   background-color: var(--Dark-violet);
+  color: var(--White);
   margin-bottom: 2em;
   margin-top: 1em;
 }
