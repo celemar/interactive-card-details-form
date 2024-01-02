@@ -1,0 +1,129 @@
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.card__form__container {
+  margin-top: 4em;
+}
+
+.card__form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+  gap: 1em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  text-align: left;
+  color: var(--Dark-violet);
+}
+
+.card__input {
+  padding: 0.8em;
+  width: 100%;
+  background-color: transparent;
+  color: var(--Dark-violet);
+  font-size: 1rem;
+  border-radius: 0.5em;
+  border: solid 1px var(--Light-grayish-violet);
+  font-weight: 600;
+}
+
+.card__input::placeholder {
+  color: var(--Dark-grayish-violet);
+  opacity: 50%;
+}
+
+.card__input:hover,
+.card__input:focus {
+  outline: 1px solid var(--Border-violet);
+  border: 1px solid var(--Border-violet);
+}
+
+input:focus {
+  border: 1px solid var(--Border-violet);
+}
+
+.card__cvc-mmyy {
+  display: flex;
+}
+
+.label__mm {
+  max-width: 44%;
+}
+
+.label__mm > div {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.label__cvc {
+  margin-left: 1em;
+}
+
+.info {
+  color: var(--Red-color);
+  font-size: 0.7rem;
+}
+
+.mm-yy__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0.8em;
+}
+
+.input__error {
+  padding: 0.8em;
+  width: 100%;
+  background-color: transparent;
+  color: var(--Dark-violet);
+  font-size: 1rem;
+  border-radius: 0.5em;
+  border: solid 1px var(--Red-color);
+  font-weight: 600;
+}
+
+.info:nth-child(5) {
+  margin-top: 8px;
+}
+
+.cvc {
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .card__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+  }
+
+  .card__form__container {
+    margin: 0;
+    max-width: 50%;
+  }
+
+  .label__cvc {
+    margin-left: 1em;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .card__form__container {
+    margin: 0;
+    max-width: 40%;
+  }
+
+  .card__cvc-mmyy {
+    margin-bottom: 0.2em;
+  }
+}
