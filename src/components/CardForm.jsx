@@ -29,6 +29,7 @@ const CardForm = ({ setFormData, formData, handleSubmit }) => {
   };
 
   return (
+    <main>
     <form className="card__form" onSubmit={handleSubmit}>
       <div className="card__form__container">
         <label className="label__name">Cardholder Name</label>
@@ -114,6 +115,7 @@ const CardForm = ({ setFormData, formData, handleSubmit }) => {
         </button>
       </div>
     </form>
+    </main>
   );
 };
 

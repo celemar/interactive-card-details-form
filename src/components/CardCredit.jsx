@@ -2,7 +2,7 @@ import "../styles/CardCredit.css";
 
 const CardCredit = ({ formData }) => {
   return (
-    <div className="card">
+    <section className="card">
       <div className="card__front">
         <span>{formData.number || "0000 0000 0000 0000"}</span>
         <div className="card__info">
@@ -14,7 +14,7 @@ const CardCredit = ({ formData }) => {
       <div className="card__back">
         <span>{formData.cvc || "000"}</span>
       </div>
-    </div>
+    </section>
   );
 };
 
