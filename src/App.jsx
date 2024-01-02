@@ -34,27 +34,29 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <div className="card-credit__wrapper">
-        <CardCredit formData={formData} />
+    <main>
+      <div className="container">
+        <div className="card-credit__wrapper">
+          <CardCredit formData={formData} />
+        </div>
+        <div className="card-form__wrapper">
+          {isFormValid ? (
+            <CardThanks />
+          ) : (
+            <CardForm
+              formData={formData}
+              setFormData={setFormData}
+              handleSubmit={handleSubmit}
+            />
+          )}
+          {!isFormValid && hasSubmitted && (
+            <div className="invalid-form__wrapper">
+              <p className="invalid-form">Please fill in all fields</p>
+            </div>
+          )}
+        </div>
       </div>
-      <div className="card-form__wrapper">
-        {isFormValid ? (
-          <CardThanks />
-        ) : (
-          <CardForm
-            formData={formData}
-            setFormData={setFormData}
-            handleSubmit={handleSubmit}
-          />
-        )}
-        {!isFormValid && hasSubmitted && (
-         <div className="invalid-form__wrapper">
-          <p className="invalid-form">Please fill in all fields</p>
-         </div> 
-        )}
-      </div>
-    </div>
+    </main>
   );
 }
 
