@@ -10,7 +10,7 @@ const CardThanks = () => {
       <div className="card-thanks__wrapper">
         <img
           className="icon-complete"
-          src="src/assets/icon-complete.svg"
+          src="../src/assets/icon-complete.svg"
           alt="icon complete"
         />
         <h2>Thank You!</h2>
