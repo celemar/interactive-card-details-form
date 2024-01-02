@@ -109,6 +109,7 @@ input:focus {
   .card__form__container {
     margin: 0;
     max-width: 50%;
+    margin-left: 6em;
   }
 
   .label__cvc {
@@ -121,6 +122,8 @@ input:focus {
   .card__form__container {
     margin: 0;
     max-width: 40%;
+    scale: 1.15;
+    margin-left: 6em;
   }
 
   .card__cvc-mmyy {

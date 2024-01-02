@@ -93,11 +93,11 @@
 
   .card__front {
     top: 30%;
-    left: 30%;
+    left: 35%;
   }
 
   .card__back {
-    left: 45%;
+    left: 55%;
     top: 53%;
   }
 }
@@ -114,7 +114,7 @@
   }
 
   .card__back {
-    left: 60%;
+    left: 65%;
     top: 55%;
   }
 }
